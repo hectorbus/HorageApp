@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title> Horage App.</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet"  href="../static/css/index.css">
+	</head>
+	<body>
+		<header>
+          <p><strong>Avisos</strong> <a href="/"><img id="flecha" src="../static/img/flecha.png" width= "30px"></a>
+          </p>
+       </header>
+		<section>
+			<article id="avisos">
+				{% for p in Note %}
+    				<li id="avisos_a">{{ p.nota }}</li>
+				{% endfor %}
+			</article>
+		</section>
+	</body>
+</html>
